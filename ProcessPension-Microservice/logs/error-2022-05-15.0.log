@@ -1,0 +1,28 @@
+2022-05-15_18-33-59 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8100 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8100 or configure this application to listen on another port.
+
+2022-05-15_18-33-56 [http-nio-8100-exec-2] ERROR c.c.p.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2022-05-15_18-33-56 [http-nio-8100-exec-2] ERROR c.c.p.p.e.GlobalExceptionHandler - [404] during [GET] to [http://localhost:8200/pensioner/api/v1/PensionerDetailByAadhaar/0] [PensionerDetailFeignClient#getPensionerDetailByAadhaar(String,long)]: [{"timeStamp":"15-05-2022 08:51:16","status":"NOT_FOUND","message":"Aadhar Card Number is not Valid. Please check it and try again"}]
+2022-05-15_18-33-56 [http-nio-8100-exec-3] ERROR c.c.p.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2022-05-15_18-33-56 [http-nio-8100-exec-3] ERROR c.c.p.p.e.GlobalExceptionHandler - [404] during [GET] to [http://localhost:8200/pensioner/api/v1/PensionerDetailByAadhaar/0] [PensionerDetailFeignClient#getPensionerDetailByAadhaar(String,long)]: [{"timeStamp":"15-05-2022 09:00:52","status":"NOT_FOUND","message":"Aadhar Card Number is not Valid. Please check it and try again"}]
+2022-05-15_18-33-56 [http-nio-8100-exec-4] ERROR c.c.p.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2022-05-15_18-33-56 [http-nio-8100-exec-4] ERROR c.c.p.p.e.GlobalExceptionHandler - [404] during [GET] to [http://localhost:8200/pensioner/api/v1/PensionerDetailByAadhaar/0] [PensionerDetailFeignClient#getPensionerDetailByAadhaar(String,long)]: [{"timeStamp":"15-05-2022 09:01:55","status":"NOT_FOUND","message":"Aadhar Card Number is not Valid. Please check it and try again"}]
+2022-05-15_18-33-56 [http-nio-8100-exec-6] ERROR c.c.p.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2022-05-15_18-33-56 [http-nio-8100-exec-6] ERROR c.c.p.p.e.GlobalExceptionHandler - [404] during [GET] to [http://localhost:8200/pensioner/api/v1/PensionerDetailByAadhaar/0] [PensionerDetailFeignClient#getPensionerDetailByAadhaar(String,long)]: [{"timeStamp":"15-05-2022 09:15:08","status":"NOT_FOUND","message":"Aadhar Card Number is not Valid. Please check it and try again"}]
+2022-05-15_18-33-56 [http-nio-8100-exec-5] ERROR c.c.p.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2022-05-15_18-33-56 [http-nio-8100-exec-5] ERROR c.c.p.p.e.GlobalExceptionHandler - [404] during [GET] to [http://localhost:8200/pensioner/api/v1/PensionerDetailByAadhaar/0] [PensionerDetailFeignClient#getPensionerDetailByAadhaar(String,long)]: [{"timeStamp":"15-05-2022 09:17:48","status":"NOT_FOUND","message":"Aadhar Card Number is not Valid. Please check it and try again"}]
+2022-05-15_18-33-56 [http-nio-8100-exec-7] ERROR c.c.p.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2022-05-15_18-33-56 [http-nio-8100-exec-7] ERROR c.c.p.p.e.GlobalExceptionHandler - [404] during [GET] to [http://localhost:8200/pensioner/api/v1/PensionerDetailByAadhaar/0] [PensionerDetailFeignClient#getPensionerDetailByAadhaar(String,long)]: [{"timeStamp":"15-05-2022 09:18:17","status":"NOT_FOUND","message":"Aadhar Card Number is not Valid. Please check it and try again"}]
+2022-05-15_18-33-56 [http-nio-8100-exec-9] ERROR c.c.p.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2022-05-15_18-33-56 [http-nio-8100-exec-9] ERROR c.c.p.p.e.GlobalExceptionHandler - [404] during [GET] to [http://localhost:8200/pensioner/api/v1/PensionerDetailByAadhaar/0] [PensionerDetailFeignClient#getPensionerDetailByAadhaar(String,long)]: [{"timeStamp":"15-05-2022 09:51:23","status":"NOT_FOUND","message":"Aadhar Card Number is not Valid. Please check it and try again"}]
