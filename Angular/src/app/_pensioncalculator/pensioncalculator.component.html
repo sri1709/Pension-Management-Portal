@@ -1,0 +1,23 @@
+<h2>Pensiondetails Details</h2> 
+
+<hr/>
+<div *ngIf="pensionerCallist">
+  <div>
+    <label><b>Name: </b></label> {{pensionerCallist.name}}
+  </div>
+  <div>
+    <label><b>Date of Birth: </b></label> {{pensionerCallist.dateOfBirth}}
+  </div>
+  <div>
+    <label><b>PAN Id: </b></label> {{pensionerCallist.pan}}
+  </div>  
+  <div>
+    <label><b>PensionTye: </b></label> {{pensionerCallist.pensionType}}
+  </div>  
+  <div>
+    <label><b>PensionAmount: </b></label> {{pensionerCallist.pensionAmount}}
+  </div>  
+</div>
+<br>
+<br>
+<button  (click)="gotoList()" class="btn btn-primary">Back to Pensionerlist</button><br>

@@ -1,0 +1,33 @@
+﻿<div class="card mt-4">
+    <h4 style="text-align: center;"class="card-header">Pensioners List</h4>
+    <div class="panel-body">
+        <table class="table table-hover table-sm">
+        <thead class="thead-light">
+            <tr>
+                <th>AadharNumber</th>
+                <th>Name</th>
+                <th>DateOfBirth</th>
+                <th>SalaryEarned</th>
+                <th>Allowances</th>
+                <th>PensionType</th>
+                <th>AccountNumber</th>
+                <th>bankType</th>
+            </tr>
+        </thead>
+        <tbody *ngIf="pensionerdetails">
+            <tr *ngFor="let pensionerdetail of pensionerdetails">
+               <td> {{pensionerdetail.aadharNumber}}</td>
+               <td> {{pensionerdetail.name}}</td>
+                <td>{{pensionerdetail.dateOfBirth}}</td>
+                <td>{{pensionerdetail.salaryEarned}}</td>
+                <td>{{pensionerdetail.allowances}}</td>
+                <td> {{pensionerdetail.pensionType}}</td>
+                <td>{{pensionerdetail.accountNumber}}</td>
+                <td>{{pensionerdetail.bankType}}</td>
+                <td><button  (click)="getPensionercalculator(pensionerdetail.aadharNumber)" class="btn btn-info">calcutatePension</button>
+                </td>
+            </tr>
+        </tbody><br>
+        </table>
+    </div>
+</div>

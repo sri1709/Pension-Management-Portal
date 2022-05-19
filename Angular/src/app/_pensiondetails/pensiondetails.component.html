@@ -1,0 +1,43 @@
+<div class="col-md-6 offset-md-3 mt-5">
+    <!-- <div class="alert alert-info">
+         Username: test<br />
+         Password: test
+     </div>--> 
+     <div class="card">
+         <h4 class="card-header">Pensioner Details</h4>
+         <div class="card-body">
+             <form [formGroup]="pensionForm" (ngSubmit)="onClick()">
+                 <div class="form-group">
+                     <label for="aadharNumber">AadharNumber</label>
+                     <input type="text" formControlName="aadharNumber" class="form-control"                   
+                     [ngClass]="{ 'is-invalid': submitted && g.aadharNumber.errors }" />
+                     <div *ngIf="submitted && g.aadharNumber.errors" class="invalid-feedback">
+                         <div *ngIf="g.aadharNumber.errors.required">aadharNumber is required</div>
+                     </div>
+                 </div>
+                 <button [disabled]="loading" class="btn btn-primary">
+                     <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                     submit
+                 </button>
+                 <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+             </form>
+         </div>
+     </div>
+     <div class="panel-body">
+        <table class="table table-hover table-sm">
+            <thead class="thead-light">
+            <tr>
+                <th>Pensioner Details</th>
+            </tr>
+        </thead>
+        <tbody *ngIf="pensionerdetaillist">
+            <tr *ngFor="let pensionerdetail of pensionerdetaillist|keyvalue">
+               <td>
+                  <b> {{pensionerdetail.key}}</b> = <b>{{pensionerdetail.value}}</b> 
+
+                 </td>
+            </tr>
+        </tbody><br>
+        </table>
+    </div>
+ </div>
