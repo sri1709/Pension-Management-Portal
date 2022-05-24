@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:us-east-1:156962844638:task-definition/PMS-877629-PensionDisbursement-Microservice:1"
+        LoadBalancerInfo:
+          ContainerName: "PensionDisbursement-Microservice-container"
+          ContainerPort: "80"
+        PlatformVersion: "LATEST"
